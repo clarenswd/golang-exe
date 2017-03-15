@@ -2,6 +2,10 @@
 package main;
 import "fmt";
 
+func title (param string){
+    fmt.Println(param)
+}
+
 
 func main(){
     yourAge := 28;
@@ -44,6 +48,19 @@ func main(){
     for _,value := range favNums3{
         fmt.Println(value)
     }
+    
+
+    title("SLICES")
+
+    //Slices
+    numSlice := []int {1,2,3,4,5,6,7,8}
+    fmt.Println("numSlice[0] = " , numSlice[0] )
+    //Slice from slice
+    numSlice2 := numSlice[3:5]
+
+    fmt.Println("numSlice2[0] = " , numSlice2[0] )
+
+
 
 
 
